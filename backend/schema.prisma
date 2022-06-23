@@ -1,0 +1,60 @@
+datasource db {
+  url = env("DATABASE_URL")
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model tbl_user {
+  user_id        Int      @id @default(autoincrement())
+  first_name     String?
+  last_name      String?
+  email_id       String   @unique
+  password       String?
+  status         Int?      @default(1)
+  created_at     DateTime? @default(now())
+  created_by     Int?
+  updated_at     DateTime? @default(now())
+  updated_by     Int?    
+  deleted_at     DateTime? @default(now())
+  deleted_by     Int?
+  is_admin       Boolean @default(false)
+  tbl_post       tbl_post[]
+  tbl_product    tbl_product[]
+}
+
+model tbl_post {
+  post_id        Int @id @default(autoincrement())
+  user           tbl_user @relation(fields: [user_id], references: [user_id])
+  user_id        Int
+  title          String?
+  description    String?
+  image          String?
+  status         Int? @default(1)
+  created_at     DateTime? @default(now())
+  created_by     Int?
+  updated_at     DateTime? @default(now())
+  updated_by     Int?    
+  deleted_at     DateTime? @default(now())
+  deleted_by     Int?
+}
+model tbl_product {
+  product_id        Int @id @default(autoincrement())
+  user              tbl_user @relation(fields: [user_id], references: [user_id])
+  user_id           Int 
+  name              String 
+  price             String
+  weight            String
+  image             String
+  manufactured_by   String
+  status            Int? @default(1)
+  created_at        DateTime? @default(now())
+  created_by        Int?
+  updated_at        DateTime? @default(now())
+  updated_by        Int?    
+  deleted_at        DateTime? @default(now())
+  deleted_by        Int?
+
+}

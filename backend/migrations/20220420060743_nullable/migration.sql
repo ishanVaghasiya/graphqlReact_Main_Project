@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "tbl_user" ALTER COLUMN "status" DROP NOT NULL,
+ALTER COLUMN "created_by" DROP NOT NULL,
+ALTER COLUMN "updated_by" DROP NOT NULL,
+ALTER COLUMN "deleted_by" DROP NOT NULL;

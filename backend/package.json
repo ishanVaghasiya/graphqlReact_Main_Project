@@ -1,0 +1,46 @@
+{
+  "name": "prisma_practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prisma": "^3.12.0"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@graphql-tools/merge": "^8.2.10",
+    "@prisma/client": "^3.12.0",
+    "apollo-server": "^3.6.7",
+    "apollo-server-core": "^3.6.7",
+    "apollo-server-express": "^3.6.7",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "excel4node": "^1.7.2",
+    "express": "^4.18.0",
+    "formidable": "^2.0.1",
+    "graphql": "^16.4.0",
+    "graphql-upload": "^13.0.0",
+    "html-pdf": "^3.0.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "passport": "^0.5.2",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-google-oauth20": "^2.0.0",
+    "prettier-plugin-prisma": "^3.12.0",
+    "save": "^2.5.0",
+    "validator": "^13.7.0"
+  },
+  "description": ""
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		table {
+			border-collapse: collapse;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="width: 85%; margin: 0 7.5%;">
+		<div style="text-align: center; padding-left: 50px;">
+			<h3>
+				<%= pdfTitle %>
+			</h3>
+			<center>
+				<table style="text-align : center">
+
+
+					<% if (data.length> 0) { %>
+						<tr>
+							<% columns.map(e=> {%>
+
+								<td>
+									<%= e %>
+								</td>
+
+								<% });%>
+						</tr>
+						<% data.map(e=> {%>
+
+							<tr>
+								
+								<td>
+									<%= e.name %>
+								</td>
+								<td>
+									<%= e.price %>
+								</td>
+								<td>
+									<%= e.weight %>
+								</td>
+								<td>
+									<%= e.manufactured_by %>
+								</td>
+								<td>
+									<%= e.status %>
+								</td>
+								<td>
+									<%= e.created_at %>
+								</td>
+								<td>
+									<%= e.created_by %>
+								</td>
+								<td>
+									<%= e.updated_at %>
+								</td>
+								<td>
+									<%= e.updated_by %>
+								</td>
+								<td>
+									<%= e.deleted_at %>
+								</td>
+								<td>
+									<%= e.deleted_by %>
+								</td>
+							</tr>
+							<% });%>
+								<% }%>
+				</table>
+			</center>
+		</div>
+	</div>
+</body>
+
+</html>

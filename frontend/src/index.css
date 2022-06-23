@@ -1,0 +1,137 @@
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.5s ease-in;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.row,
+.col {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.k-button.editBtn {
+  color: var(--dark);
+  background-color: var(--secondary-50);
+  border: 1px solid var(--dark);
+  margin: 5px 0px !important;
+  margin-right: 5px !important;
+  padding: 5px !important;
+}
+
+.k-button.editBtn:hover {
+  color: var(--dark);
+  background-color: var(--secondary-50);
+  border: 1px solid var(--dark);
+  padding: 5px !important;
+}
+
+
+.k-button.deleteBtn {
+  color: var(--danger);
+  background-color: var(--danger-50);
+  border: 1px solid var(--danger);
+  margin: 5px 0px !important;
+}
+
+.k-button.deleteBtn:hover {
+  color: var(--danger);
+  background-color: var(--danger-50);
+  border: 1px solid var(--danger);
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--beta);
+  margin-bottom: 30px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+textarea {
+  border: 1px solid var(--beta);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+
+}
+
+textarea:focus {
+  border: 2px solid var(--beta);
+}
+
+input:focus {
+  border-bottom: 2px solid var(--beta)
+}
+
+.fromContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="file"] {
+  /* color: var(--beta); */
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+input[type=file]::file-selector-button {
+  border: 1px solid var(--beta);
+  background-color: var(--primary);
+  border-radius: 3px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+input[type=file]::file-selector-button:hover {
+  border: 1px solid var(--beta);
+  background-color: var(--beta);
+}
+
+.success_btn {
+  border: 2px solid var(--success);
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--success);
+  background-color: var(--primary);
+  font-weight: 500;
+  transition: 0.8s;
+}
+
+
+.success_btn:hover {
+  background-color: var(--success);
+  color: var(--primary);
+}
+
+.description {
+  min-height: 80px;
+  max-height: 100px;
+  width: 100%;
+  text-align: justify;
+  padding: 5px;
+  font-weight: 500;
+
+}
+
+
+.cardContainer textarea {
+  border: 1px solid var(--dark-50) !important;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+}

@@ -1,0 +1,33 @@
+.myContainer {
+    background-color: var(--secondary-50);
+    min-height: calc(100vh - 52.33px);
+    max-height: 100%;
+    padding: 0 200px;
+}
+
+.myDarkContainer {
+    background-color: var(--darkSecondary);
+}
+
+.darkcardContainer .k-card {
+    border: 2px solid var(--darkOcean);    
+    background-color: var(--darkSecondary);
+    color: var(--darkOcean);
+    font-weight: 500;
+    box-shadow: 0px 0px 8px 0px #00acb55b;
+}
+
+.darkcardContainer .k-card .k-card-header{
+ color: var(--darkOlive);
+}
+
+.darkHeading{
+    color: var(--darkOcean);
+}
+
+.add_user_btn.k-button {
+    margin-top: 15px;
+    margin-left: 22px;
+    padding: 5px 10px;
+}
+

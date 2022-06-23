@@ -1,0 +1,40 @@
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+.loginFormContainer {
+    border: 2px solid rgb(27, 94, 32);
+    border-radius: 20px;
+    width: 400px;
+    padding: 30px;
+
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginFormHeading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(27, 94, 32);
+}
+
+

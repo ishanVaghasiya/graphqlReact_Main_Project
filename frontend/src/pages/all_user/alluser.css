@@ -1,0 +1,28 @@
+/* .adduser_container .k-button .k-button-md  .add_btn{
+   
+margin: 10px;
+} */
+
+.add_btn .k-button{
+    margin: 10px;
+}
+
+.drawerContent .k-button {
+    margin: 20px 0;
+}
+
+.add_user_btn.k-button:hover{
+    background-color: #F05D52;
+}
+
+.add_admin_btn.k-button {
+    color: rgb(245, 245, 245);
+    margin-left: 10px;
+    background-color: rgb(3, 149, 3);
+}
+
+.add_admin_btn.k-button:hover{
+    color: rgb(245, 245, 245);
+    margin-left: 10px;
+    background-color: rgb(0, 107, 0);
+}

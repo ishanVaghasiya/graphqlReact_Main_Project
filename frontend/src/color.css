@@ -1,0 +1,21 @@
+:root{
+    --primary : #f5f5f5;
+    --secondary : #d7d7d7;
+    --secondary-50: #d5d5d580;
+    --success : #2e7d32;
+    --danger : #ff0000;
+    --danger-50: #ff9696bc;
+    --beta : #f35e53;
+    --dark: #000000;
+    --dark-50: #00000080;
+    --dark-90: hsla(0, 0%, 0%, 0.90);
+
+    --darkPrimary: #222831;
+    --darkSecondary: #393E46;
+    --darkSecondary-50 : #393e4680;
+    --darkOcean: #00ADB5;
+    --darkOlive :  #8B9A46;
+    --darkLight : #EEEEEE;
+    --darkBlue : #6A097D;
+  }
+

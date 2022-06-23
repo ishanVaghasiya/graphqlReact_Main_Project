@@ -1,0 +1,47 @@
+.k-drawer-item {
+    user-select: none;
+}
+
+/* side bar */
+.drawerContainer .k-drawer-container .k-drawer {
+    background-color: var(--primary);
+    color: var(--dark);
+
+}
+
+.darkDrawerContainer .k-drawer-container .k-drawer {
+    background-color: var(--dark-50);
+    color: var(--darkOcean);
+}
+
+
+/* content */
+.drawerContainer .k-drawer-container {
+    min-height: calc(100vh - 51.58px);
+    background-color: var(--secondary-50);
+    max-height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: all ease 0.3s;
+}
+
+.darkDrawerContainer .k-drawer-container {
+    background-color: var(--darkSecondary);
+}
+
+.drawerContainer .k-drawer-content.drawer_content .drawerContent {
+    padding: 10px;
+}
+
+
+/* Navbar */
+.myDarkNavbar .k-appbar{
+    color: var(--darkOlive);
+    background-color: var(--dark-90);
+}
+
+
+.myLink {
+    color: inherit;
+    text-decoration: none;
+}
